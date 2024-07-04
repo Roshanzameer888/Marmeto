@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="product-container">
+        <div class="main-image-container">
+            <img src="/photo.png" alt="Main Product Image" class="main-image">
+            <div class="thumbnails">
+                <img src="/photo.png" alt="Thumbnail 1">
+                <img src="/photo.png" alt="Thumbnail 2">
+                <img src="/photo.png" alt="Thumbnail 3">
+                <img src="/photo.png" alt="Thumbnail 4">
+            </div>
+        </div>
+        <div class="product-details">
+            <h1 class="brand-name">Marmeto</h1>
+            <h2 class="product-name">Embrace Sideboard</h2>
+            <div class="price-container">
+                <span class="current-price">$12999.00</span>
+                <span class="discount">35% Off</span>
+                <span class="original-price">$19999.00</span>
+            </div>
+            <div class="color-options">
+                <label>Choose a Color:</label>
+                <div class="color-box" style="background-color: beige;"></div>
+                <div class="color-box" style="background-color: lightgreen;"></div>
+                <div class="color-box" style="background-color: lightblue;"></div>
+                <div class="color-box" style="background-color: lightpink;"></div>
+            </div>
+            <div class="size-options">
+                <label>Choose a Size:</label>
+                <input type="radio" id="small" name="size" value="small" checked>
+                <label for="small">Small</label>
+                <input type="radio" id="medium" name="size" value="medium">
+                <label for="medium">Medium</label>
+                <input type="radio" id="large" name="size" value="large">
+                <label for="large">Large</label>
+                <input type="radio" id="extra-large" name="size" value="extra-large">
+                <label for="extra-large">Extra Large</label>
+                <input type="radio" id="xxl" name="size" value="xxl">
+                <label for="xxl">XXL</label>
+            </div>
+            <div class="quantity-selector">
+                <button class="decrement">-</button>
+                <input type="number" value="1" min="1" max="99">
+                <button class="increment">+</button>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="product-description">
+                <p>The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and reliability.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
